@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+    <style>
+        body,ul{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        .test{
+            width: 800px;
+            background-color: blanchedalmond;
+        }
+        .test::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .test>li{
+            float: left;
+            height: 100px;
+            width: 260px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            background-color: aquamarine;
+        }
+        .test>li:nth-child(3n){
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <ul class="test">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>
